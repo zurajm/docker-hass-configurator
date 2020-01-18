@@ -1,5 +1,5 @@
-FROM mielune/alpine-python3-arm
-MAINTAINER Martin <Munsio> Treml
+FROM zurajm/docker-alpine-python3
+MAINTAINER Miha Zuraj
 
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
