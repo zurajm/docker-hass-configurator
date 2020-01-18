@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Clone configurator repo
+rm -fr ./src
+git clone https://github.com/danielperna84/hass-configurator.git ./src
+sed -i 's/GIT = False/GIT = True/g' ./src/configurator.py
+
 # Get architecture from Dockerfile.arch filename
 BUILD_ARCH=$(echo "${DOCKERFILE_PATH}" | cut -d '.' -f 2)
 
@@ -21,8 +26,3 @@ QEMU_USER_STATIC_LATEST_TAG=$(curl -s https://api.github.com/repos/multiarch/qem
 
 curl -SL "${QEMU_USER_STATIC_DOWNLOAD_URL}/${QEMU_USER_STATIC_LATEST_TAG}/x86_64_qemu-${QEMU_ARCH}-static.tar.gz" \
     | tar xzv
-
-# Clone configurator repo
-rm -fr ./src
-git clone https://github.com/danielperna84/hass-configurator.git ./src
-sed -i 's/GIT = False/GIT = True/g' ./src/configurator.py
