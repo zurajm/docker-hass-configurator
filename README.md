@@ -1,5 +1,5 @@
 # hass-configurator-docker
-Linux x32/64 and ARM (raspberry) builds for the hass-configurator
+Linux and ARM multiarch builds for the hass-configurator. Based on [this repo](https://github.com/CausticLab/hass-configurator-docker).
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/zurajm/hass-configurator?style=flat-square)
 ![Docker Pulls](https://img.shields.io/docker/pulls/zurajm/hass-configurator?style=flat-square)
