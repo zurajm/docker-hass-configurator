@@ -1,15 +1,20 @@
 # hass-configurator-docker
 Linux x32/64 and ARM (raspberry) builds for the hass-configurator
 
-<!-- [![Build Status](https://travis-ci.org/CausticLab/hass-configurator-docker.svg)](https://travis-ci.org/CausticLab/hass-configurator-docker) -->
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/zurajm/hass-configurator?style=flat-square)
+![Docker Pulls](https://img.shields.io/docker/pulls/zurajm/hass-configurator?style=flat-square)
+![Docker Stars](https://img.shields.io/docker/stars/zurajm/hass-configurator?style=flat-square)
 
+Based on Alpine, image size only:
+
+![MicroBadger Size](https://img.shields.io/microbadger/image-size/zurajm/hass-configurator)
 
 ## Usage
 
 Example docker-compose.yaml
 ```yaml
   hass-configurator:
-    image: "causticlab/hass-configurator-docker:arm"
+    image: "zurajm/hass-configurator"
     restart: always
     ports:
       - "3218:3218/tcp"
@@ -51,6 +56,6 @@ As with version 0.3.3 2018-12-23 there is also an ARCH only tag on docker hub ma
 
 ## Links
 
-- Original Repository by [danielperna84](https://github.com/danielperna84/hass-configurator)
-- Docker Images are on [docker hub](https://hub.docker.com/r/causticlab/hass-configurator-docker/)
-- The corresponding [github repository](https://github.com/CausticLab/hass-configurator-docker)
+- Original Repository by [CausticLab](https://github.com/CausticLab/hass-configurator-docker)
+- Docker Images are on [Docker hub](https://hub.docker.com/repository/docker/zurajm/hass-configurator)
+- The corresponding [Github repository](https://github.com/zurajm/docker-hass-configurator)
