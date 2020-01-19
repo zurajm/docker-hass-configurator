@@ -5,7 +5,7 @@ curl -Lo manifest-tool https://github.com/estesp/manifest-tool/releases/download
 chmod +x manifest-tool
 
 # Tag as latest
-TAG_VER=$(echo "${DOCKER_TAG}" | sed  's/-arm[0-9][0-9]v[0-9].*//' )
+TAG_VER=$(echo "${DOCKER_TAG}" |  rev | cut -d- -f2- | rev )
 if [[ ! $TAG_VER =~ (-beta|-test) ]]; then
     echo "Tagging version ${TAG_VER} as latest..."
     TAG_LATEST=$(echo "${DOCKER_TAG}" | sed s/${TAG_VER}/latest/g)
