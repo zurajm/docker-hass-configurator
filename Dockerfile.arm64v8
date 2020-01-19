@@ -1,4 +1,4 @@
-FROM zurajm/docker-alpine-python3:3.7.5-r1-arm64v8
+FROM zurajm/alpine-python3:3.7.5-arm64
 MAINTAINER Miha Zuraj
 
 # Uncomment next line if building in x86 host

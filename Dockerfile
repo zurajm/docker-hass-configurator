@@ -1,4 +1,4 @@
-FROM zurajm/docker-alpine-python3:3.7.5-r1
+FROM zurajm/alpine-python3:3.7.5
 MAINTAINER Miha Zuraj
 
 RUN apk update && apk upgrade && \
