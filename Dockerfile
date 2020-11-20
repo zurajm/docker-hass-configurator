@@ -1,4 +1,4 @@
-FROM zurajm/alpine-python3:3.7.5
+FROM zurajm/alpine-python3:3.12
 MAINTAINER Miha Zuraj
 
 RUN apk update && apk upgrade && \

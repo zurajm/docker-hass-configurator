@@ -1,4 +1,4 @@
-FROM zurajm/alpine-python3:3.7.5-arm
+FROM zurajm/alpine-python3:3.12-arm
 MAINTAINER Miha Zuraj
 
 # Uncomment next line if building in x86 host

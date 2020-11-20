@@ -54,6 +54,11 @@ https://<github username>:<some token>@github.com/<github username>/<some repo>.
 As with version 0.3.3 the pattern of the docker image was changed to use semver, for backwards compatibility version 0.3.3 will have both versions up in the docker hub
 As with version 0.3.3 2018-12-23 there is also an ARCH only tag on docker hub marking an image as "latest" for the specific ARCH
 
+## Building Info
+When bumping version, please set:
+- *GIT_TAG* to the latest tag in source repo in [hooks/post_checkout](hooks/post_checkout)
+- tag the commit to this repo with the same tag so the versions match
+
 ## Links
 
 - Original Repository by [CausticLab](https://github.com/CausticLab/hass-configurator-docker)
